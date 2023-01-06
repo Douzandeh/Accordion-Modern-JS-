@@ -48,9 +48,9 @@
 
 // !057
 // let header = document.querySelector("#header");
- // header.classList.add("mb-5");
- // header.classList.remove("btn-success");
- // header.classList.toggle("btn-danger");
+// header.classList.add("mb-5");
+// header.classList.remove("btn-success");
+// header.classList.toggle("btn-danger");
 
 // let lists = document.querySelectorAll('li')
 
@@ -61,13 +61,12 @@
 //     if(list.textContent.includes('danger')){
 //         list.classList.add('text-danger')
 //     }
-    
-// })
 
+// })
 
 // !058
 
-let ul =document.querySelector('ul')
+let ul = document.querySelector("ul");
 // ! Qalateh
 // ul.children.forEach(li => {
 //     console.log(li);
@@ -77,7 +76,7 @@ let ul =document.querySelector('ul')
 //     li.style.color = 'red'
 //     if(index % 2 ==0){
 //     li.style.color = 'red'
-        
+
 //     }else{
 //     li.style.color = 'green'
 
@@ -90,13 +89,29 @@ let ul =document.querySelector('ul')
 // ul.previousElementSibling.style.color= 'red'
 // ul.nextElementSibling.style.color = 'red'
 
-
 // !059
 
-let btn = document.querySelector('button')
-btn.addEventListener('click' , e =>{
-    e.target.textContent = 'Clicked!';
-    e.target.classList.add('btn-danger')
-    alert('Hossein Douzandeh')
-})
+// let btn = document.querySelector('button')
+// btn.addEventListener('click' , e =>{
+//     e.target.textContent = 'Clicked!';
+//     e.target.classList.add('btn-danger')
+//     alert('Hossein Douzandeh')
+// })
 
+// ? Online and offline internet event practice
+
+let el = document.createElement("div");
+
+document.querySelector(".content").prepend(el);
+
+window.addEventListener("online", (event) => {
+  el.textContent = 'online'
+  el.className = 'alert'
+  el.classList.add('alert-success')
+});
+
+window.addEventListener("offline", (event) => {
+  el.textContent = 'offline'
+  el.className = 'alert'
+  el.classList.add('alert-danger')
+});
