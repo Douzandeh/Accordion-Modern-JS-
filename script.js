@@ -47,19 +47,45 @@
 // })
 
 // !057
-let header = document.querySelector("#header");
-// header.classList.add("mb-5");
-// header.classList.remove("btn-success");
-// header.classList.toggle("btn-danger");
+// let header = document.querySelector("#header");
+ // header.classList.add("mb-5");
+ // header.classList.remove("btn-success");
+ // header.classList.toggle("btn-danger");
 
-let lists = document.querySelectorAll('li')
+// let lists = document.querySelectorAll('li')
 
-lists.forEach(list =>{
-    if(list.textContent.includes('success')){
-        list.classList.add('text-success')
-    }
-    if(list.textContent.includes('danger')){
-        list.classList.add('text-danger')
-    }
+// lists.forEach(list =>{
+//     if(list.textContent.includes('success')){
+//         list.classList.add('text-success')
+//     }
+//     if(list.textContent.includes('danger')){
+//         list.classList.add('text-danger')
+//     }
     
-})
+// })
+
+
+// !058
+
+let ul =document.querySelector('ul')
+// ! Qalateh
+// ul.children.forEach(li => {
+//     console.log(li);
+// });
+// * Dorost
+// Array.from(ul.children).forEach((li, index) => {
+//     li.style.color = 'red'
+//     if(index % 2 ==0){
+//     li.style.color = 'red'
+        
+//     }else{
+//     li.style.color = 'green'
+
+//     }
+// });
+
+// console.log(ul.parentElement);
+// ul.parentElement.style.fontSize= '25px'
+
+ul.previousElementSibling.style.color= 'red'
+ul.nextElementSibling.style.color = 'red'
