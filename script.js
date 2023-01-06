@@ -19,7 +19,6 @@
 // }
 // create_navbar(pepole)
 
-
 // !055
 // let header = document.querySelector('#header')
 
@@ -33,21 +32,34 @@
 //     link.setAttribute('data-portocol' , 'ssl')
 // })
 
-
-
-
-
 // !056
-let links = document.querySelectorAll('a')
+// let links = document.querySelectorAll('a')
 
-links.forEach(link => {
-    // link.setAttribute('data-portocol' , 'ssl')
-    // let href = link.href
-    // link.href = href.replace('http://' , 'https://');
-    // console.log(link.dataset.protocol);
-    // link.dataset.protocol2 = 'SSL'
-    // link.setAttribute('style' , 'color: red ; font-size:30px')
-    link.style.color = 'red'
+// links.forEach(link => {
+// link.setAttribute('data-portocol' , 'ssl')
+// let href = link.href
+// link.href = href.replace('http://' , 'https://');
+// console.log(link.dataset.protocol);
+// link.dataset.protocol2 = 'SSL'
+// link.setAttribute('style' , 'color: red ; font-size:30px')
+// link.style.color = 'red'
 
+// })
+
+// !057
+let header = document.querySelector("#header");
+// header.classList.add("mb-5");
+// header.classList.remove("btn-success");
+// header.classList.toggle("btn-danger");
+
+let lists = document.querySelectorAll('li')
+
+lists.forEach(list =>{
+    if(list.textContent.includes('success')){
+        list.classList.add('text-success')
+    }
+    if(list.textContent.includes('danger')){
+        list.classList.add('text-danger')
+    }
+    
 })
-
