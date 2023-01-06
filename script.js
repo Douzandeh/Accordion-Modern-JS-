@@ -87,5 +87,16 @@ let ul =document.querySelector('ul')
 // console.log(ul.parentElement);
 // ul.parentElement.style.fontSize= '25px'
 
-ul.previousElementSibling.style.color= 'red'
-ul.nextElementSibling.style.color = 'red'
+// ul.previousElementSibling.style.color= 'red'
+// ul.nextElementSibling.style.color = 'red'
+
+
+// !059
+
+let btn = document.querySelector('button')
+btn.addEventListener('click' , e =>{
+    e.target.textContent = 'Clicked!';
+    e.target.classList.add('btn-danger')
+    alert('Hossein Douzandeh')
+})
+
