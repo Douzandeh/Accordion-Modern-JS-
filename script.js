@@ -1,27 +1,3 @@
-// let header = document.querySelector('#header')
-
-// console.log(header.getAttribute('id'));
-// header.setAttribute('title' , 'my header title')
-
-let links = document.querySelectorAll('a')
-links.forEach(link =>{
-    href = link.getAttribute('href')
-    link.setAttribute('href', href.replace('http://', 'https://'))
-    link.setAttribute('data-portocol' , 'ssl')
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
 // !054
 // let pepole = [
 //     {name: 'Hossein' , new: true},
@@ -42,3 +18,36 @@ links.forEach(link =>{
 // })
 // }
 // create_navbar(pepole)
+
+
+// !055
+// let header = document.querySelector('#header')
+
+// console.log(header.getAttribute('id'));
+// header.setAttribute('title' , 'my header title')
+
+// let links = document.querySelectorAll('a')
+// links.forEach(link =>{
+//     href = link.getAttribute('href')
+//     link.setAttribute('href', href.replace('http://', 'https://'))
+//     link.setAttribute('data-portocol' , 'ssl')
+// })
+
+
+
+
+
+// !056
+let links = document.querySelectorAll('a')
+
+links.forEach(link => {
+    // link.setAttribute('data-portocol' , 'ssl')
+    // let href = link.href
+    // link.href = href.replace('http://' , 'https://');
+    // console.log(link.dataset.protocol);
+    // link.dataset.protocol2 = 'SSL'
+    // link.setAttribute('style' , 'color: red ; font-size:30px')
+    link.style.color = 'red'
+
+})
+
