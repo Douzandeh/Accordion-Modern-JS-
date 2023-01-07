@@ -66,7 +66,7 @@
 
 // !058
 
-let ul = document.querySelector("ul");
+// let ul = document.querySelector("ul");
 // ! Qalateh
 // ul.children.forEach(li => {
 //     console.log(li);
@@ -100,18 +100,23 @@ let ul = document.querySelector("ul");
 
 // ? Online and offline internet event practice
 
-let el = document.createElement("div");
+// let el = document.createElement("div");
 
-document.querySelector(".content").prepend(el);
+// document.querySelector(".content").prepend(el);
 
-window.addEventListener("online", (event) => {
-  el.textContent = 'online'
-  el.className = 'alert'
-  el.classList.add('alert-success')
-});
+// window.addEventListener("online", (event) => {
+//   el.textContent = 'online'
+//   el.className = 'alert'
+//   el.classList.add('alert-success')
+// });
 
-window.addEventListener("offline", (event) => {
-  el.textContent = 'offline'
-  el.className = 'alert'
-  el.classList.add('alert-danger')
-});
+// window.addEventListener("offline", (event) => {
+//   el.textContent = 'offline'
+//   el.className = 'alert'
+//   el.classList.add('alert-danger')
+// });
+
+
+
+
+// !061
