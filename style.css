@@ -11,29 +11,26 @@
 }
 
 .accordion > div.show > span:after {
-    content: "\2212";
-    
-  }
-
+  content: "\2212";
+}
 
 .accordion > div > span:hover,
-.accordion > div.show > span{
-    background-color: #ccc;
+.accordion > div.show > span {
+  background-color: #ccc;
 }
 
+.accordion > div > div {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  /* display: none; */
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  padding: 0 15px;
 
-
-.accordion > div > div{
-    padding: 15px;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    display: none;
 }
 
-/* .accordion > div > div{
-    display: none;
-} */
-
-.accordion > div.show > div{
-    display: block;
+.accordion > div.show > div {
+  /* display: block; */
+  padding: 15px;
 }
