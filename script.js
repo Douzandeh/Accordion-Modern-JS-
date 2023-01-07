@@ -116,7 +116,13 @@
 //   el.classList.add('alert-danger')
 // });
 
+// !062
+let accordion = document.querySelector(".accordion");
 
-
-
-// !061
+Array.from(accordion.children).forEach((wrapper) => {
+  wrapper.querySelector("span").addEventListener("click", (e) => {
+    let span = e.target;
+    let wrapper = span.parentElement;
+    wrapper.classList.toggle("show");
+  });
+});
